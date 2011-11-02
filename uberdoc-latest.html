@@ -2525,8 +2525,8 @@ $(document).ready(function() {
   font-style: italic !important;
   color: #2a00ff !important;
 }
-</style><style type="text/css">html{margin:0;padding:0;}h1{margin:0;padding:0;}h2{margin:0;padding:0;}h3{margin:0;padding:0;}h4{margin:0;padding:0;}a{color:#261A3B;}a:visited{color:#261A3B;}</style><style type="text/css">.header{margin-top:30px;}h1.project-name{font-size:34px;display:inline;}h2.project-version{font-size:18px;margin-top:0;display:inline;margin-left:10px;}.toc-link{font-size:12px;margin-left:10px;color:#252519;text-decoration:none;}.toc-link:hover{color:#5050A6;}.toc h1{font-size:34px;margin:0;}.docs-header{border-bottom:dotted #aaa 1px;padding-bottom:10px;margin-bottom:25px;}.toc h1{font-size:24px;}.toc{border-bottom:solid #bbb 1px;margin-bottom:40px;}.toc ul{margin-left:20px;padding-left:0px;padding-top:0;margin-top:0;}.toc li{list-style-type:none;padding-left:0;}.dependencies{}.dependencies table{font-size:16px;width:99.99%;border:none;margin-left:20px;}.dependencies td{padding-right:20px;;white-space:nowrap;}.dependencies .dotted{width:99%;}.dependencies .dotted hr{margin-bottom:-6px;noshade:noshade;border-top:none;color:transparent;border-left:none;border-bottom:dotted #bbb 1px;border-right:none;background-color:transparent;height:0;}.dependencies .dep-version{text-align:right;}.plugins ul{margin-left:20px;padding-left:0px;padding-top:0;margin-top:0;}.plugins li{list-style-type:none;padding-left:0;}.header p{margin-left:20px;}</style><style type="text/css">#floating-toc{position:fixed;top:10px;right:20px;height:20px;overflow:hidden;text-align:right;}#floating-toc li{list-style-type:none;margin:0;padding:0;}</style><style type="text/css">body{margin:0;padding:0;font-family:'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;;font-size:16px;color:#252519;}h1{font-size:20px;margin-top:0;}a.anchor{text-decoration:none;color:#252519;}a.anchor:hover{color:#5050A6;}table{border-spacing:0;border-bottom:solid #ddd 1px;;margin-bottom:10px;}code{display:inline;}p{margin-top:8px;}tr{margin:0px;padding:0px;}td.docs{width:410px;max-width:410px;vertical-align:top;margin:0px;padding-left:55px;padding-right:20px;border:none;}td.docs pre{font-size:12px;overflow:hidden;}td.codes{border:none;margin:0px;padding-left:20px;width:55%;border-left:solid #E5E5EE 1px;font-size:10pt;vertical-align:top;overflow:hidden;background-color:#F5F5FF;}td.spacer{padding-bottom:40px;}pre code{display:block;padding:4px;}code{background-color:ghostWhite;border:solid #DEDEDE 1px;padding-left:3px;padding-right:3px;font-size:14px;}.syntaxhighlighter code{font-size:13px;}.footer{text-align:center;}</style><title>clj-webdriver -- Marginalia</title></head><body><table><tr><td class="docs"><div class="header"><h1 class="project-name">clj-webdriver</h1><h2 class="project-version">0.4.0-SNAPSHOT</h2><br /><p>Clojure wrapper around Selenium-WebDriver library</p>
-</div><div class="dependencies"><h3>dependencies</h3><table><tr><td class="dep-name">org.clojure/clojure</td><td class="dotted"><hr /></td><td class="dep-version">1.3.0</td></tr><tr><td class="dep-name">org.seleniumhq.selenium/selenium-server</td><td class="dotted"><hr /></td><td class="dep-version">2.7.0</td></tr><tr><td class="dep-name">clache</td><td class="dotted"><hr /></td><td class="dep-version">0.7.0</td></tr><tr><td class="dep-name">org.clojure/tools.logging</td><td class="dotted"><hr /></td><td class="dep-version">0.2.3</td></tr></table></div><div class="dependencies"><h3>dev dependencies</h3><table><tr><td class="dep-name">marginalia</td><td class="dotted"><hr /></td><td class="dep-version">0.3.2</td></tr><tr><td class="dep-name">ring</td><td class="dotted"><hr /></td><td class="dep-version">0.3.7</td></tr><tr><td class="dep-name">enlive</td><td class="dotted"><hr /></td><td class="dep-version">1.0.0</td></tr><tr><td class="dep-name">net.cgrand/moustache</td><td class="dotted"><hr /></td><td class="dep-version">1.0.0</td></tr></table></div></td><td class="codes" style="text-align: center; vertical-align: middle;color: #666;padding-right:20px"><br /><br /><br />(this space intentionally left blank)</td></tr><tr><td class="docs"><div class="toc"><a name="toc"><h3>namespaces</h3></a><ul><li><a href="#clj-webdriver.cache">clj-webdriver.cache</a></li><li><a href="#clj-webdriver.core">clj-webdriver.core</a></li><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#clj-webdriver.driver">clj-webdriver.driver</a></li><li><a href="#clj-webdriver.firefox">clj-webdriver.firefox</a></li><li><a href="#clj-webdriver.form-helpers">clj-webdriver.form-helpers</a></li><li><a href="#clj-webdriver.grid">clj-webdriver.grid</a></li><li><a href="#clj-webdriver.js.browserbot">clj-webdriver.js.browserbot</a></li><li><a href="#clj-webdriver.options">clj-webdriver.options</a></li><li><a href="#clj-webdriver.util">clj-webdriver.util</a></li><li><a href="#clj-webdriver.wait">clj-webdriver.wait</a></li><li><a href="#clj-webdriver.window-handle">clj-webdriver.window-handle</a></li></ul></div></td><td class="codes">&nbsp;</td></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#clj-webdriver.cache" name="clj-webdriver.cache"><h1 class="project-name">clj-webdriver.cache</h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs"><h2>Element Caching</h2>
+</style><style type="text/css">html{margin:0;padding:0;}h1{margin:0;padding:0;}h2{margin:0;padding:0;}h3{margin:0;padding:0;}h4{margin:0;padding:0;}a{color:#261A3B;}a:visited{color:#261A3B;}</style><style type="text/css">.header{margin-top:30px;}h1.project-name{font-size:34px;display:inline;}h2.project-version{font-size:18px;margin-top:0;display:inline;margin-left:10px;}.toc-link{font-size:12px;margin-left:10px;color:#252519;text-decoration:none;}.toc-link:hover{color:#5050A6;}.toc h1{font-size:34px;margin:0;}.docs-header{border-bottom:dotted #aaa 1px;padding-bottom:10px;margin-bottom:25px;}.toc h1{font-size:24px;}.toc{border-bottom:solid #bbb 1px;margin-bottom:40px;}.toc ul{margin-left:20px;padding-left:0px;padding-top:0;margin-top:0;}.toc li{list-style-type:none;padding-left:0;}.dependencies{}.dependencies table{font-size:16px;width:99.99%;border:none;margin-left:20px;}.dependencies td{padding-right:20px;;white-space:nowrap;}.dependencies .dotted{width:99%;}.dependencies .dotted hr{margin-bottom:-6px;noshade:noshade;border-top:none;color:transparent;border-left:none;border-bottom:dotted #bbb 1px;border-right:none;background-color:transparent;height:0;}.dependencies .dep-version{text-align:right;}.plugins ul{margin-left:20px;padding-left:0px;padding-top:0;margin-top:0;}.plugins li{list-style-type:none;padding-left:0;}.header p{margin-left:20px;}</style><style type="text/css">#floating-toc{position:fixed;top:10px;right:20px;height:20px;overflow:hidden;text-align:right;}#floating-toc li{list-style-type:none;margin:0;padding:0;}</style><style type="text/css">body{margin:0;padding:0;font-family:'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif;;font-size:16px;color:#252519;}h1{font-size:20px;margin-top:0;}a.anchor{text-decoration:none;color:#252519;}a.anchor:hover{color:#5050A6;}table{border-spacing:0;border-bottom:solid #ddd 1px;;margin-bottom:10px;}code{display:inline;}p{margin-top:8px;}tr{margin:0px;padding:0px;}td.docs{width:410px;max-width:410px;vertical-align:top;margin:0px;padding-left:55px;padding-right:20px;border:none;}td.docs pre{font-size:12px;overflow:hidden;}td.codes{border:none;margin:0px;padding-left:20px;width:55%;border-left:solid #E5E5EE 1px;font-size:10pt;vertical-align:top;overflow:hidden;background-color:#F5F5FF;}td.spacer{padding-bottom:40px;}pre code{display:block;padding:4px;}code{background-color:ghostWhite;border:solid #DEDEDE 1px;padding-left:3px;padding-right:3px;font-size:14px;}.syntaxhighlighter code{font-size:13px;}.footer{text-align:center;}</style><title>clj-webdriver -- Marginalia</title></head><body><table><tr><td class="docs"><div class="header"><h1 class="project-name">clj-webdriver</h1><h2 class="project-version">0.4.0</h2><br /><p>Clojure wrapper around Selenium-WebDriver library</p>
+</div><div class="dependencies"><h3>dependencies</h3><table><tr><td class="dep-name">org.clojure/clojure</td><td class="dotted"><hr /></td><td class="dep-version">1.3.0</td></tr><tr><td class="dep-name">org.seleniumhq.selenium/selenium-server</td><td class="dotted"><hr /></td><td class="dep-version">2.11.0</td></tr><tr><td class="dep-name">clache</td><td class="dotted"><hr /></td><td class="dep-version">0.7.0</td></tr><tr><td class="dep-name">org.clojure/tools.logging</td><td class="dotted"><hr /></td><td class="dep-version">0.2.3</td></tr></table></div><div class="dependencies"><h3>dev dependencies</h3><table><tr><td class="dep-name">marginalia</td><td class="dotted"><hr /></td><td class="dep-version">0.3.2</td></tr><tr><td class="dep-name">ring</td><td class="dotted"><hr /></td><td class="dep-version">0.3.7</td></tr><tr><td class="dep-name">enlive</td><td class="dotted"><hr /></td><td class="dep-version">1.0.0</td></tr><tr><td class="dep-name">net.cgrand/moustache</td><td class="dotted"><hr /></td><td class="dep-version">1.0.0</td></tr></table></div></td><td class="codes" style="text-align: center; vertical-align: middle;color: #666;padding-right:20px"><br /><br /><br />(this space intentionally left blank)</td></tr><tr><td class="docs"><div class="toc"><a name="toc"><h3>namespaces</h3></a><ul><li><a href="#clj-webdriver.cache">clj-webdriver.cache</a></li><li><a href="#clj-webdriver.core">clj-webdriver.core</a></li><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#"></a></li><li><a href="#clj-webdriver.driver">clj-webdriver.driver</a></li><li><a href="#clj-webdriver.firefox">clj-webdriver.firefox</a></li><li><a href="#clj-webdriver.form-helpers">clj-webdriver.form-helpers</a></li><li><a href="#clj-webdriver.grid">clj-webdriver.grid</a></li><li><a href="#clj-webdriver.js.browserbot">clj-webdriver.js.browserbot</a></li><li><a href="#clj-webdriver.options">clj-webdriver.options</a></li><li><a href="#clj-webdriver.util">clj-webdriver.util</a></li><li><a href="#clj-webdriver.wait">clj-webdriver.wait</a></li><li><a href="#clj-webdriver.window-handle">clj-webdriver.window-handle</a></li></ul></div></td><td class="codes">&nbsp;</td></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#clj-webdriver.cache" name="clj-webdriver.cache"><h1 class="project-name">clj-webdriver.cache</h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs"><h2>Element Caching</h2>
 
 <p>Due to how Selenium-WebDriver deals with elements on a page,
 even if the same element is queried in an identical way,
@@ -2716,15 +2716,13 @@ WebDriver API.</p>
   {:firefox FirefoxDriver
    :ie InternetExplorerDriver
    :chrome ChromeDriver
-   :htmlunit HtmlUnitDriver})</pre></td></tr><tr><td class="docs">
-</td><td class="codes"><pre class="brush: clojure"></pre></td></tr><tr><td class="docs"><p>TODO: Use precondition instead of throwing an exception
-Instantiate a new WebDriver instance given a browser type. If an additional profile object or string is passed in, Firefox will be started with the given profile instead of the default.</p>
-</td><td class="codes"><pre class="brush: clojure">(defn new-webdriver*
+   :htmlunit HtmlUnitDriver})</pre></td></tr><tr><td class="docs"><p>Instantiate a new WebDriver instance given a browser type. If an additional profile object or string is passed in, Firefox will be started with the given profile instead of the default.</p>
+</td><td class="codes"><pre class="brush: clojure">
+(defn new-webdriver*
   ([browser]
      (.newInstance (webdriver-drivers (keyword browser))))
   ([browser profile]
-     (when (not= :firefox (keyword browser))
-       (throw (IllegalArgumentException. &quot;Only Firefox supports profiles&quot;)))
+     {:pre [(= browser :firefox)]}
      (FirefoxDriver. profile)))</pre></td></tr><tr><td class="docs"><p>Create new Driver given a browser type. If an additional profile object or string is passed in, Firefox will be started with the given profile instead of the default.</p>
 
 <p>This is the preferred method for starting up a browser, as it leverages clj-webdriver-specific functionality not available with vanilla WebDriver instances. You can always access the underlying WebDriver instance with the :webdriver key of your Driver record.</p>
@@ -2993,8 +2991,7 @@ Given a collection of WebElements, filter the collection by the regular expressi
           (recur matching-elements (dissoc attr-vals-with-regex attr)))))))</pre></td></tr><tr><td class="docs"><p>API with clj-webdriver's Driver implementation</p>
 </td><td class="codes"><pre class="brush: clojure"></pre></td></tr><tr><td class="docs"><p>API with Selenium-WebDriver's WebDriver class</p>
 </td><td class="codes"><pre class="brush: clojure">(load &quot;core_driver&quot;)
-(load &quot;core_webdriver&quot;)
-</pre></td></tr><tr><td class="spacer docs">&nbsp;</td><td class="codes" /></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#" name=""><h1 class="project-name"></h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs">
+(load &quot;core_webdriver&quot;)</pre></td></tr><tr><td class="spacer docs">&nbsp;</td><td class="codes" /></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#" name=""><h1 class="project-name"></h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs">
 </td><td class="codes"><pre class="brush: clojure">(in-ns 'clj-webdriver.core)</pre></td></tr><tr><td class="docs"><p>Used when finding elements. Returns <code>By/id</code> of <code>expr</code></p>
 </td><td class="codes"><pre class="brush: clojure">
 (defn by-id
@@ -3799,18 +3796,22 @@ cache-spec - map with keys :strategy, :args, :include and :exclude</p>
   [driver]
   (= (class driver) Driver))</pre></td></tr><tr><td class="spacer docs">&nbsp;</td><td class="codes" /></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#clj-webdriver.firefox" name="clj-webdriver.firefox"><h1 class="project-name">clj-webdriver.firefox</h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs">
 </td><td class="codes"><pre class="brush: clojure">(ns clj-webdriver.firefox
+  (:use [clj-webdriver.core :only [new-webdriver*]]
+        [clj-webdriver.driver :only [init-driver]])
   (:require [clojure.java.io :as io])
-  (:import org.openqa.selenium.firefox.FirefoxProfile))</pre></td></tr><tr><td class="docs">
+  (:import org.openqa.selenium.firefox.FirefoxProfile))</pre></td></tr><tr><td class="docs"><p>Create new Driver given a browser type. If an additional profile object or string is passed in, Firefox will be started with the given profile instead of the default.</p>
+
+<p>This is the preferred method for starting up a browser, as it leverages clj-webdriver-specific functionality not available with vanilla WebDriver instances. You can always access the underlying WebDriver instance with the :webdriver key of your Driver record.</p>
 </td><td class="codes"><pre class="brush: clojure">
 (defn new-firefox-driver
-  ([browser]
-     (init-driver (new-webdriver* browser)))
-  ([browser profile]
-     (init-driver (new-webdriver* browser profile)))
-  ([browser profile caching-strategy]
-     (init-driver (new-webdriver* browser profile) caching-strategy))
-  ([browser profile caching-strategy cache-args]
-     (init-driver (new-webdriver* browser profile) caching-strategy cache-args)))</pre></td></tr><tr><td class="docs"><p>Create an instance of <code>FirefoxProfile</code></p>
+  ([]
+     (init-driver (new-webdriver* :firefox)))
+  ([profile]
+     (init-driver (new-webdriver* :firefox profile)))
+  ([profile cache-spec]
+     (init-driver (new-webdriver* :firefox profile) cache-spec))
+  ([profile cache-spec cache-args]
+     (init-driver (new-webdriver* :firefox profile) cache-spec cache-args)))</pre></td></tr><tr><td class="docs"><p>Create an instance of <code>FirefoxProfile</code></p>
 </td><td class="codes"><pre class="brush: clojure">
 (defn new-profile
   []
@@ -3827,11 +3828,11 @@ cache-spec - map with keys :strategy, :args, :include and :exclude</p>
     (.setPreference profile (name (key entry)) (val entry))))</pre></td></tr><tr><td class="docs"><p>Set whether or not Firefox should accept untrusted certificates.</p>
 </td><td class="codes"><pre class="brush: clojure">
 (defn accept-untrusted-certs
-  [profile ^Boolean bool]
+  [profile bool]
   (.setAcceptUntrustedCertificates profile bool))</pre></td></tr><tr><td class="docs"><p>Set whether or not native events should be enabled (true by default on Windows, false on other platforms).</p>
 </td><td class="codes"><pre class="brush: clojure">
 (defn enable-native-events
-  [profile ^Boolean bool]
+  [profile bool]
   (.setEnableNativeEvents profile bool))</pre></td></tr><tr><td class="spacer docs">&nbsp;</td><td class="codes" /></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#clj-webdriver.form-helpers" name="clj-webdriver.form-helpers"><h1 class="project-name">clj-webdriver.form-helpers</h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs"><h2>Form Helpers</h2>
 
 <p>The functions in this namespace are designed to make working with HTML forms
@@ -3902,21 +3903,31 @@ a Grid-based replacement for <code>clj-webdriver.core/new-driver</code>, just as
 
 <p>If only a <code>browser</code> is supplied, this function assumes the hub is running locally and will use 'http://localhost:4444/wd/hub' as the value for <code>hub-url</code>.</p>
 </td><td class="codes"><pre class="brush: clojure">
-(defn new-driver-on-grid
+(defn new-webdriver-on-grid*
   ([browser] (new-driver-on-grid &quot;http://localhost:4444/wd/hub&quot; browser))
-  ([hub-url browser]
+  ([browser hub-url]
      (RemoteWebDriver. (java.net.URL. hub-url),
-                       (call-method DesiredCapabilities browser nil nil))))</pre></td></tr><tr><td class="docs"><p>Convenience function for starting a new RemoteWebDriver on a Grid node managed by a Grid hub at <code>hub-url</code>, running tests with the given <code>browser</code> and <code>start-url</code>.</p>
+                       (call-method DesiredCapabilities browser nil nil))))</pre></td></tr><tr><td class="docs"><p>Create new Driver on a node managed by a Grid hub at <code>hub-url</code>.</p>
+</td><td class="codes"><pre class="brush: clojure">
+(defn new-driver-on-grid
+  ([browser]
+     (init-driver (new-webdriver-on-grid* browser)))
+  ([browser hub-url]
+     (init-driver (new-webdriver-on-grid* browser hub-url)))
+  ([browser hub-url cache-spec]
+     (init-driver (new-webdriver-on-grid* browser hub-url) cache-spec))
+  ([browser hub-url cache-spec cache-args]
+     (init-driver (new-webdriver-on-grid* browser hub-url) cache-spec cache-args)))</pre></td></tr><tr><td class="docs"><p>Convenience function for starting a new RemoteWebDriver on a Grid node managed by a Grid hub at <code>hub-url</code>, running tests with the given <code>browser</code> and <code>start-url</code>.</p>
 
 <p>If only a <code>browser</code> and <code>start-url</code> are supplied, this function assumes the hub is running locally and will use 'http://localhost:4444/wd/hub' as the value for <code>hub-url</code>.</p>
 </td><td class="codes"><pre class="brush: clojure">
 (defn start-on-grid
   ([browser start-url]
-     (let [driver (new-driver-on-grid &quot;http://localhost:4444/wd/hub&quot; browser)]
+     (let [driver (new-driver-on-grid browser &quot;http://localhost:4444/wd/hub&quot;)]
        (get-url driver start-url)
        driver))
   ([hub-url browser start-url]
-     (let [driver (new-driver-on-grid hub-url browser)]
+     (let [driver (new-driver-on-grid browser hub-url)]
        (get-url driver start-url)
        driver)))</pre></td></tr><tr><td class="spacer docs">&nbsp;</td><td class="codes" /></tr><tr><td class="docs"><div class="docs-header"><a class="anchor" href="#clj-webdriver.js.browserbot" name="clj-webdriver.js.browserbot"><h1 class="project-name">clj-webdriver.js.browserbot</h1><a class="toc-link" href="#toc">toc</a></a></div></td><td class="codes" /></tr><tr><td class="docs">
 </td><td class="codes"><pre class="brush: clojure">(ns clj-webdriver.js.browserbot)</pre></td></tr><tr><td class="docs">
